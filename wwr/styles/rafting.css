@@ -23,21 +23,39 @@ body {
     padding: 20px;
 }
 
+footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    height: 40px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
 header {
+    margin: 10px;
+    border: 1px solid var(--primary-color);
     padding: 20px;
     background-color: var(--accent1-color);
     height: 100px;
+    display: grid;
     align-content: center;
 }
 
 header img {
     height: 80px;
     float: left;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 p {
@@ -48,10 +66,19 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column:  2/5;
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
 }
 
 nav a {
-    margin: 1em;
+    padding: 0.5em;
     border: 1px solid var(--lprimary-color);
     background-color: var(--secondary-color);
 }
@@ -73,12 +100,15 @@ nav a:hover {
     height: auto;
 }
 
-.hero div {
+.hero {
     position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
 }
 
 .hero h1 {
-    top: 280px;
+    top: 190px;
     left: 70px;
     position: absolute;
     color: #fff;
@@ -86,13 +116,14 @@ nav a:hover {
 }
 
 .hero article {
-    top: 300px;
-    max-width: 920px;
+    top: 200px;
+    max-width: 95%;
     position: absolute;
     background-color: var(--primary-color);
     color: #fff;
     padding: 20px;
     opacity: 0.8;
+    margin-right: 10px;
 }
 
 .hero article img {
@@ -107,4 +138,14 @@ nav a:hover {
 
 * {
     max-width: 1200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.grid img{
+    width: 100%;
 }
