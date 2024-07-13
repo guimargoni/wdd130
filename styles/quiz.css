@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    width: 500px;
+    margin: 10px;
+    background-color: rgb(219, 213, 213);
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+
+fieldset {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+input, textarea, select, label{
+    width: 400px;
+    margin: 10px;
+}
+
+b {
+    color: blue;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.declaration {
+    display: flex;
+    background-color: #333333;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 270px;
+    height: 10px;
+    margin: 20px 10px 10px 50px;
+}
