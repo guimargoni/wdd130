@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    /* CSS HEX */
+--primary-color: #43271c;
+--secondary-color: #43be7d;
+--accent1-color: #c36621;
+--accent2-color: #b0b2b8ff;
+--lprimary-color: #cfd6eaff;
+
+--heading-font: "Playwrite DE Grund", cursive;
+--paragraph-font: "Playwrite DE Grund", cursive;
+
+--nav-background-color: #a25e21;
+--nav-link-color: #fff;
+--nav-hover-link-color: #c4c989;
+--nav-hover-background-color: #a25e21;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    height: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    background-color: var(--accent1-color);
+    height: 100px;
+    display: grid;
+    align-content: center;
+}
+
+header img {
+    height: 80px;
+    float: left;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+footer p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column:  2/5;
+}
+
+nav a {
+    padding: 0.5em;
+    border: 1px solid var(--lprimary-color);
+    background-color: var(--secondary-color);
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color)
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+form {
+    width: 500px;
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--accent1-color); 
+}
+
+fieldset {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+textarea, select, label{
+    width: 400px;
+    margin: 10px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Class Selectors*/
+
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--accent1-color); 
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color);
+    color: var(--lprimary-color);
+}
+
+.card img{
+    height: 150px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid img{
+    height: 300px;
+    width: 90%;
+}
+.grid p{
+    text-align: center;
+}
+
+.big-box {
+    width: 100%;
+}
+
+* {
+    max-width: 1200px;
+}
